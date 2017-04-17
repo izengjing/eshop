@@ -1,0 +1,17 @@
+[
+  {
+    "product_id": 1,
+    "product_name": "BELLE B&W",
+    "product_price": 187.95
+  },
+  {
+    "product_id": 2,
+    "product_name": "CLUB YORK",
+    "product_price": 187.95
+  },
+  {
+    "product_id": 3,
+    "product_name": "ROADSTER",
+    "product_price": 220.95
+  }
+]
