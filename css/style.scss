@@ -1,4 +1,10 @@
 
+
+
+
+
+
+
 //==============================
 //header
 //==============================
@@ -10,7 +16,7 @@ header{
   background-size: cover;
   $write-color: #fff;
   $gray-color: #333;
-
+  position: relative;
   .top-menu{
     height: 100px;
     line-height: 100px;
@@ -79,10 +85,13 @@ header{
     }
   }
   #table{
-    //width: 100%;
+    width: 1140px;
     height: 290px;
     background: $write-color;
     z-index: 111;
+    display: none;
+    position: absolute;
+    top: 138px;
     ul{
       width: 170px;
       overflow: hidden;
