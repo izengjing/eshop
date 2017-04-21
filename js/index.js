@@ -7,7 +7,7 @@
 
 $(function(){
     //商品功能
-    var Product = function (id,name,price,img,quantity){
+    var Product = function (id,name,price,img){
         this.id = id;
         this.name = name;
         this.price = price;
@@ -29,12 +29,11 @@ $(function(){
         init : function(){
             this.loadData();//先加载一部分数据
             this.$productList.on('click','.btn-add-cart',function(){
-                // cart.addCart($(this).data('item'));
+
                 console.log($(this).parents('.product-item'));
                 console.log($(this).parents('.product-item').data());
                 console.log($(this).parents('.product-item').data('item-data'));
             });
-
 
         },
         loadData : function(){
@@ -43,7 +42,6 @@ $(function(){
                 for(var i = 0;i<data.length;i++){
 
                     var product = new Product(data[i].product_id,data[i].product_name,data[i].product_price,data[i].product_img);
-                    // 由于是jquery对象，$product指的是li
                     var $product = $('<li class="product-item">\
                             <div class="imgZone">\
                                 <a href=""><img src="'+product.img+'" alt=""></a>\
@@ -54,11 +52,11 @@ $(function(){
                                 <input type="text" class="quantity" value="1"/><br />\
                                 <input type="button" class="btn-add-cart" value="ADD">\
                             </div>\
-                        </li>').data('item-data',product);//绑定 名称：itemdata，值：product
-                    //console.log($product.data("item-data"));
+                        </li>');//绑定 名称：item-data，值：product
+                    $product.data('item-data',product);
                     this.$productList.append($product);
 
-                    // console.log($product);
+                    console.log($product);
                      console.log($product.data('item-data'));
                 }
             }.bind(this),'json');//是个函数，通过bind把this传进去
