@@ -1,5 +1,8 @@
 
 
+$write-color: #fff;
+$gray-color: #333;
+$light-gray-color: #ccc;
 
 
 
@@ -14,8 +17,6 @@ header{
   background: rgba(0,0,0,.1) url("../images/banner3.jpg") no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
-  $write-color: #fff;
-  $gray-color: #333;
   position: relative;
   .top-menu{
     height: 100px;
@@ -116,5 +117,117 @@ header{
     }
   }
 }
+#categoires{
+  margin-top: 56px;
+  li{
+    float: left;
+    width: 365px;
+    height: 210px;
+    margin-right: 22px;
+    overflow: hidden;
+  }
+  li:nth-child(3){
+    margin-right: 0;
+  }
+}
+
+#container{
+  padding-top: 56px;
+  display: block;
+  overflow: hidden;
+}
+
+#banner{
+  float: right;
+  li{
+    float: left;
+    background: #fa558f;
+    padding: 7px 28px;
+    margin-left: 5px;
+    &:hover,&.active{
+      background: $gray-color;
+    }
+    a{
+      text-transform: capitalize;
+      color: #fff;
+    }
+  }
+}
+
+#tab-grids{
+  padding-top: 56px;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+
+  .tab li{
+    width: 31%;
+    height: 641px;
+    border: 1px $light-gray-color solid;
+    margin: 0 3.2% 10px 0;
+    float: left;
+    overflow: hidden;
+    .imgZone{
+      width: 100%;
+      height: 476px;
+      overflow: hidden;
+      img{
+        width: 100%;
+      }
+    }
+    .product-info{
+      width: 100%;
+      display: block;
+      height: 90%;
+      background: #eaeaea;
+      padding: 3% 20px;
+      line-height: 28px;
+      h3{
+        font-weight: 400;
+      }
+      .quantity{
+        padding: 5px 10px;
+        margin: 10px 0;
+      }
+      .btn-add-cart{
+        width: 82px;
+        height: 42px;
+        background: orange;
+        border-radius: 10px;
+      }
+    }
+  }
+  .tab li:nth-child(3n){
+    margin: 0 0 10px 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

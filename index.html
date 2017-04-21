@@ -5,8 +5,8 @@
     <title>首页</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,600,800,700,500,300,100,900' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Arimo:400,700,700italic' rel='stylesheet' type='text/css'>
+    <!--<link href='http://fonts.googleapis.com/css?family=Raleway:400,200,600,800,700,500,300,100,900' rel='stylesheet' type='text/css'>-->
+    <!--<link href='http://fonts.googleapis.com/css?family=Arimo:400,700,700italic' rel='stylesheet' type='text/css'>-->
 </head>
 <body>
     <header>
@@ -89,6 +89,56 @@
         </div>
     </header>
 
+    <div id="categoires">
+        <ul class="wrapper">
+            <li><a href=""><img src="images/bg1.jpg" alt=""></a></li>
+            <li><a href=""><img src="images/bg2.jpg" alt=""></a></li>
+            <li><a href=""><img src="images/bg3.jpg" alt=""></a></li>
+        </ul>
+    </div>
+    
+    <div id="container" class="wrapper">
+        <ul id="banner">
+            <li><a href="#">best seller</a></li>
+            <li><a href="#">popular</a></li>
+            <li><a href="#">new arrivals</a></li>
+        </ul>
+        <ul id="tab-grids">
+            <li id="bestSeller" class="tab">
+                <ul>
+                    <!--这儿有很多如下面已经注释过的代码，我把他们放到js里面，从数据库里面取出来--!>
+                    <!--<li>-->
+                        <!--<div class="imgZone">-->
+                            <!--<a href=""><img src="images/bs1.jpg" alt=""></a>-->
+                        <!--</div>-->
+                        <!--<div class="product-info">-->
+                            <!--<h3 class="title">BELLE B&W</h3>-->
+                            <!--<h4 class="product-price">$187.95</h4>-->
+                            <!--<input type="text" class="quantity" value="1"/><br />-->
+                            <!--<input type="button" class="btn-add-cart" value="ADD">-->
+                        <!--</div>-->
+                    <!--</li>-->
+                </ul>
+            </li>
+            <!--<li id="popular" class="tab">-->
+                <!--<ul>-->
+                    <!--<li><a href=""><img src="" alt=""></a></li>-->
+                    <!--<li><a href=""><img src="" alt=""></a></li>-->
+                    <!--<li><a href=""><img src="" alt=""></a></li>-->
+                <!--</ul>-->
+            <!--</li>-->
+            <!--<li id="newArrivals" class="tab">-->
+                <!--<ul>-->
+                    <!--<li><a href=""><img src="" alt=""></a></li>-->
+                    <!--<li><a href=""><img src="" alt=""></a></li>-->
+                    <!--<li><a href=""><img src="" alt=""></a></li>-->
+                <!--</ul>-->
+            <!--</li>-->
+        </ul>
+    </div>
+
+    <script src="js/jquery.js"></script>
     <script src="js/require.js" data-main="js/style"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
