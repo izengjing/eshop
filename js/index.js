@@ -38,8 +38,11 @@ $(function(){
             this.totalAmount += product.price * product.quantity;
 
             //优化：购物车方法，这个是业务逻辑，不应该dom操作，不应该与dom直接挂钩，应该把dom操作与业务逻辑分离开
-            $('#quantity').html(this.totalQuantity+" items");
-            $('#money').html("$ "+this.totalAmount);
+            // $('#quantity').html(this.totalQuantity+" items");
+            // $('#money').html("$ "+this.totalAmount);
+
+            //单独渲染
+            productComp.render();
             // console.log(this.productList.length);
             // console.log(this.productList);
         },
@@ -62,6 +65,10 @@ $(function(){
                 //  console.log($(this).parents('.product-item').data('item-data'));
                 // console.log(product);
             });
+        },
+        render : function(){
+            $('#quantity').html(cart.totalQuantity+" items");
+            $('#money').html("$ "+cart.totalAmount);
         },
         loadData : function(){
             // var $productList = $('#bestSeller ul');
