@@ -3,14 +3,17 @@
  */
 
 
-require(['jquery'],function(){
+require(['jquery.min'],function(){
     var $table = $("#table");
     var $showLi = $("#nav li");
     $showLi.hover(function(){
-        // console.log(111);
         $table.show();
     },function(){
-        // console.log(222);
+        $table.hover(function(){
+            $(this).show();
+        },function () {
+            $(this).hide();
+        });
         $table.hide();
     });
 });

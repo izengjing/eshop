@@ -43,19 +43,14 @@ header{
     float: right;
     width: 23%;
     text-align: center;
-    //height: 42px;
     overflow: hidden;
-    //position: relative;
     a{
-      //display: block;
-      //width: 100%;
-      //height: auto;
+      display: inline-block;
+      width: 100%;
+      height: 50px;
       color: $write-color;
       background: #333;
-      padding: 10px 30px;
-      //position: absolute;
-      //top: 50%;
-      //margin-top: -11px;
+      line-height: 50px;//居中
     }
   }
   #nav li{

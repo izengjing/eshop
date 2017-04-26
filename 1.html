@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var n=1;
+    var sum=0;
+    var xm="1 1";
+       xm=xm.split(' ');
+    for(var i=0;i<n;i++){
+         for(var j=0;j<parseInt(xm[1]);j++){
+             sum+=parseInt(xm[0]);
+             xm[0]++;
+         }
+    }
+    if(sum%2){
+        console.log("first");
+    }else{
+        console.log("second");
+    }
+</script>
+</body>
+</html>

@@ -43,8 +43,6 @@ $(function(){
 
             //单独渲染
             productComp.render();
-            // console.log(this.productList.length);
-            // console.log(this.productList);
         },
         removeCart: function(){
 
@@ -57,13 +55,7 @@ $(function(){
             this.$productList.on('click','.btn-add-cart',function(){
                 var product = $(this).parents('.product-item').data('item-data');
                 product.quantity = parseInt($(this).prev().val());//获取数量
-                // product.price = product.quantity*product.price;
-                // cart.addCart($(this).prev().val()*)
                 cart.addCart(product);
-               //   console.log($(this).parents('.product-item'));
-                // console.log($(this).parents('.product-item'));
-                //  console.log($(this).parents('.product-item').data('item-data'));
-                // console.log(product);
             });
         },
         render : function(){
