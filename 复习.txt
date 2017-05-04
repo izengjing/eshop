@@ -1,0 +1,9 @@
+CI框架
+mvc
+config：配置
+
+cookie:session
+大小： 4k/5M
+存储地方： 本地/服务器
+时间： 生命周期/临时
+安全：
